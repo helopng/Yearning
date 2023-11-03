@@ -2,14 +2,16 @@ package test
 
 import (
 	"encoding/json"
-	"github.com/cookieY/yee"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"strings"
+
+	"github.com/cookieY/yee"
 )
 
+// 适配手机端访问
 type Case struct {
 	Method  string
 	Uri     string
